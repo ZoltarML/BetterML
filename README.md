@@ -51,7 +51,7 @@
 * Upon right clicking a user a chat bubble icon will appear in their profile.
 * Once clicked a message window will be opened.
 
-![](https://gyazo.com/b9bb8bd1e0bb5b2d4c5c4cf3e7ea5e87.gif)
+
 
 ### Voice Module
 #### Rooms[](https://emojipedia.org/house/) 🏠
