@@ -117,6 +117,8 @@
  
 ## Uncapped Placement
  * When toggled, removes the placement cap and gets rid of the "I need to rest" message. Use this mod at your own discretion, it has been seen by some as unfair and in violation of Manyland TOS.
+
+![](https://cdn.discordapp.com/attachments/614637022614782000/1081648580621770892/image.png)
  
 ## Freecam
  * Allows you to freely move your came with your mouse after toggling with `ctrl+e`.
