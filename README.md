@@ -4,8 +4,6 @@
   * There's quite a bit to cover so feel free to jump around to what you're needing guidance on.
 
 
-
-
 ## Getting Started
  * To get started using BetterML, open your settings menu and scroll to the very bottom.
  * You should see *three* new categories in your settings menu: Sound Extras, Performance, and BetterML.
@@ -13,10 +11,8 @@
  
 ![](https://gyazo.com/6dcd6b3d612b150bb8e1caf901ea7461.gif) 
 
-
 # Mods
 * In this section we will go over each mod and describe how to use it.
-
 
 ## Sound Extras
  * This modification adds a better version of mute, that mutes everything *but* claps, pings, and clicks. It also adds the ability to hear when people are typing within a small range around you as an extra option.
@@ -116,5 +112,15 @@
  
 ## Friends+
  * Adds new options to the friends menu. Allows you to view your blocked players, all the players in the area, and it allows you to search your friends list. It also fixes the "My People Ordered" error that will sometimes occur.
+ 
  ![](https://gyazo.com/3893e32d8352fd0cf18bed0c852e67fe.gif)
+ 
+## Uncapped Placement
+ * When toggled, removes the placement cap and gets rid of the "I need to rest" message. Use this mod at your own discretion, it has been seen by some as unfair and in violation of Manyland TOS.
+ 
+## Freecam
+ * Allows you to freely move your came with your mouse after toggling with `ctrl+e`.
+ * This mod was created by Eternity.
+ 
+ ![](https://gyazo.com/6de3ecf33123a3edc8b6e5133763c10e.gif)
 
