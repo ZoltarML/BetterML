@@ -123,6 +123,5 @@
 ## Freecam
  * Allows you to freely move your came with your mouse after toggling with `ctrl+e`.
  * This mod was created by Eternity.
- 
  ![](https://gyazo.com/6de3ecf33123a3edc8b6e5133763c10e.gif)
 
