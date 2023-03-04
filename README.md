@@ -32,7 +32,10 @@
 ## Old School Rank Check
  * Shows your rank in the upper left hand corner of the screen
  * Also showspeoples ranks when you open their profile.
+
+
  ![](https://media.discordapp.net/attachments/856045199981281300/858920442684899358/unknown.png)
+ 
  ![](https://cdn.discordapp.com/attachments/614637022614782000/1081639840279433246/image.png)
 
 ## ManyBABEL
