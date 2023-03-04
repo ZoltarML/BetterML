@@ -109,7 +109,9 @@
  ![](https://cdn.discordapp.com/attachments/614637022614782000/1081639840279433246/image.png)
  
 ## Item Exporter
- * Allows the user to export items *they've* created by clicking the new export button that appears when right clicking an item. 
+ * Allows the user to export items by clicking the new export button that appears when right clicking an item. 
+ * Do note that the items you export *must*  be created by you for the script to work
+
 ![](https://cdn.discordapp.com/attachments/858914515446136833/867257595689566218/unknown.png)
 
 
