@@ -15,30 +15,34 @@
 
 
 # Mods
-
+* In this section we go over each mod and describe how to use it.
 
 ## ManyBABEL
+* This mod is designed to create an ingrained voice and text chat system in Manyland. 
+* You can view manyBABEL's source code [here](https://github.com/ZoltarML/ManyBABEL)
+
+### **WARNING**
+ * This will *not* work unless the person you are trying to message or call also has ManyBABEL enabled.
+ * If the script is not running on their end your message will be rejected and they will not be able to join world groups. 
 
 ![](https://gyazo.com/e730a6be38dd45e1297396a81992f554.gif)
 
-# **WARNING**
- * This will *not* work unless the person you are trying to message also has the script running.
- * If the script is not running on their end your message will be rejected. 
+### Chat Module
 
-## Features
+#### Features
 
-### Removing Conversation
+##### Removing Conversation
  * While hovering over a conversation a small `x` will be visible. Upon clicking it will remove a conversation and its history.
  * Note that the other clients history will still be intact.
  
 ![](https://gyazo.com/9f98fcf1f4104172f1b84901c395d733.gif)
  
 
-### Block Policy
+##### Block Policy
  * If you have blocked a player normally within Manyland then you will be unable to recieve messages from that player.
  
  
-### Send Message
+##### Send Message
 * Upon right clicking a user a chat bubble icon will appear in their profile.
 * Once clicked a message window will be opened.
 
