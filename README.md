@@ -20,7 +20,7 @@
  ![](https://media.discordapp.net/attachments/856045199981281300/858919590456197130/unknown.png)
  
 ## Performance Settings
- * Adds five performance options to the settings menu that when toggled will suspend listed entities drawing routine until disabled.
+ * Adds five performance options to the settings menu that when toggled will suspend the listed entities drawing routine until disabled to help increase game performance.
  * Options include: Heavy Art (Most paintings and decorative block types), Dynamics, Dust, Particles, Extra Performance (Stops player from loading).
  
  ![](https://cdn.discordapp.com/attachments/614637022614782000/1081638205536862309/image.png)
