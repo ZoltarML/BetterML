@@ -29,8 +29,6 @@
 
 ### Chat Module
 
-#### Features
-
 ##### Removing Conversation
  * While hovering over a conversation a small `x` will be visible. Upon clicking it will remove a conversation and its history.
  * Note that the other clients history will still be intact.
@@ -39,8 +37,7 @@
  
 
 ##### Block Policy
- * If you have blocked a player normally within Manyland then you will be unable to recieve messages from that player.
- 
+ * If you have blocked a player normally within Manyland then you will be unable to recieve messages from that player. 
  
 ##### Send Message
 * Upon right clicking a user a chat bubble icon will appear in their profile.
