@@ -116,5 +116,5 @@
  
 ## Friends+
  * Adds new options to the friends menu. Allows you to view your blocked players, all the players in the area, and it allows you to search your friends list. It also fixes the "My People Ordered" error that will sometimes occur.
- ![](https://gyazo.com/3893e32d8352fd0cf18bed0c852e67fe)
+ ![](https://gyazo.com/3893e32d8352fd0cf18bed0c852e67fe.gif)
 
