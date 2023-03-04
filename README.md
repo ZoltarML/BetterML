@@ -98,6 +98,12 @@
 	* **Hang Up:** removes you from Room or ends Room if you are the host. 
 		
 ![](https://gyazo.com/5bdf1f22cf0dd7f5b05e0623fd39e83a.gif)
+
+## Item Exporter
+ * Allows the user to export items by clicking the new export button that appears when right clicking an item. 
+ * Do note that the items you export *must*  be created by you for the script to work
+
+![](https://cdn.discordapp.com/attachments/858914515446136833/867257595689566218/unknown.png)
  
 ## Old School Rank Check
  * Shows your rank in the upper left hand corner of the screen
@@ -108,10 +114,7 @@
  
  ![](https://cdn.discordapp.com/attachments/614637022614782000/1081639840279433246/image.png)
  
-## Item Exporter
- * Allows the user to export items by clicking the new export button that appears when right clicking an item. 
- * Do note that the items you export *must*  be created by you for the script to work
-
-![](https://cdn.discordapp.com/attachments/858914515446136833/867257595689566218/unknown.png)
-
+## Friends+
+ * Adds new options to the friends menu. Allows you to view your blocked players, all the players in the area, and it allows you to search your friends list. It also fixes the "My People Ordered" error that will sometimes occur.
+ ![](https://gyazo.com/3893e32d8352fd0cf18bed0c852e67fe)
 
