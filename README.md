@@ -124,5 +124,5 @@
  * Allows you to freely move your came with your mouse after toggling with `ctrl+e`.
  * This mod was created by Eternity.
 
-![](https://gyazo.com/9fb3d19872681fd2f1bfa8e5d83145bd.gif)
+![](https://i.gyazo.com/9fb3d19872681fd2f1bfa8e5d83145bd.gif)
 
