@@ -25,7 +25,7 @@
  
  ![](https://cdn.discordapp.com/attachments/614637022614782000/1081638205536862309/image.png)
  
- ## ManyBABEL
+## ManyBABEL
 * This mod is designed to create an ingrained voice and text chat system in Manyland. 
 * You can view manyBABEL's source code [here](https://github.com/ZoltarML/ManyBABEL)
 
