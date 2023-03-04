@@ -17,6 +17,18 @@
 # Mods
 * In this section we go over each mod and describe how to use it.
 
+
+## Sound Extras
+ * This modification adds a better version of mute, that mutes everything *but* claps, pings, and clicks. It also adds the ability to hear when people are typing within a small range around you as an extra option.
+ 
+ ![](https://media.discordapp.net/attachments/856045199981281300/858919590456197130/unknown.png)
+ 
+## Performance Settings
+ * Adds five performance options to the settings menu that when toggled will suspend listed entities drawing routine until disabled.
+ * Options include: Heavy Art (Most paintings and decorative block types), Dynamics, Dust, Particles, Extra Performance (Stops player from loading).
+ *
+ ![](https://cdn.discordapp.com/attachments/614637022614782000/1081638205536862309/image.png)
+
 ## ManyBABEL
 * This mod is designed to create an ingrained voice and text chat system in Manyland. 
 * You can view manyBABEL's source code [here](https://github.com/ZoltarML/ManyBABEL)
