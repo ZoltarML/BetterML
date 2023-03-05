@@ -3,6 +3,13 @@
   * In this documentation we'll be going through how to use BetterML as well as what each modification does individually.
   * There's quite a bit to cover so feel free to jump around to what you're needing guidance on.
 
+## Deployment
+  * These steps are hopefully temporary as the extension is currently in review by the chrome webstore.  
+  * For now though, you're going to download [this](https://github.com/ZoltarML/BetterML/releases/download/1.0.0/BetterML.zip) zip file and unzip it in whichever directory you like.
+  * Next you're going to want navigate to `chrome://extensions`
+  * Enable `Developer mode` in the top right hand corner of the screen.
+  * Then finally click `load unpacked extension` in the top left hand corner of the screen and select the the `BetterML` folder you just unzipped.
+  
 
 ## Getting Started
  * To get started using BetterML, open your settings menu and scroll to the very bottom.
