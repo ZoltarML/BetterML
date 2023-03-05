@@ -1,0 +1,52 @@
+{
+  "name": "BetterML",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Making Manyland Better.",
+  "homepage_url": "https://github.com/ZoltarML/",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://manyland.com/*",
+        "http://manyland.com/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "all_frames": true,
+      "world": "MAIN"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "mods/loader.js",
+        "mods/extrasounds.js",
+        "mods/performance.js",
+        "mods/babel.js",
+        "mods/exporter.js",
+        "mods/rankhand.js",
+        "mods/friendsplus.js",
+        "mods/uncappedplacement.js",
+        "mods/freecam.js"
+      ],
+      "matches": [
+        "http://manyland.com/*",
+        "https://manyland.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "BetterML",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
