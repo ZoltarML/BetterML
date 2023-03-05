@@ -6,8 +6,7 @@
 ## Deployment
   * These steps are hopefully temporary as the extension is currently in review by the chrome webstore.  
   * For now though, you're going to download [this](https://github.com/ZoltarML/BetterML/releases/download/1.0.0/BetterML.zip) zip file and unzip it in whichever directory you like.
-  * Next you're going to want navigate to `chrome://extensions`
-  * Enable `Developer mode` in the top right hand corner of the screen.
+  * Next you're going to want navigate to `chrome://extensions` and enable `Developer mode` in the top right hand corner of the screen.
   * Then finally click `load unpacked extension` in the top left hand corner of the screen and select the the `BetterML` folder you just unzipped.
   
 
