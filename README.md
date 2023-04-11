@@ -119,7 +119,7 @@
  * When enabled, Manyland will no longer refresh your page whenever the browser window is resized.
  * This mod was created by MTP3
  
- ![](https://gyazo.com/50ff37683698c87285e44be92abaff1b)
+ ![](https://gyazo.com/50ff37683698c87285e44be92abaff1b.gif)
  
 ## Friends+
  * Adds new options to the friends menu. Allows you to view your blocked players, all the players in the area, and it allows you to search your friends list. It also fixes the "My People Ordered" error that will sometimes occur.
