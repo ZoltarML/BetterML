@@ -1,6 +1,7 @@
 {
+  "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "BetterML",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "manifest_version": 3,
   "description": "Making Manyland Better.",
   "homepage_url": "https://github.com/ZoltarML/",
@@ -13,8 +14,7 @@
       "js": [
         "inject.js"
       ],
-      "all_frames": true,
-      "world": "MAIN"
+      "all_frames": true
     }
   ],
   "icons": {
@@ -33,8 +33,9 @@
         "mods/exporter.js",
         "mods/rankhand.js",
         "mods/friendsplus.js",
-        "mods/uncappedplacement.js",
-        "mods/freecam.js"
+        "mods/movepainter.js",
+        "mods/freecam.js",
+        "mods/norefresh.js"
       ],
       "matches": [
         "http://manyland.com/*",
@@ -45,8 +46,5 @@
   "action": {
     "default_title": "BetterML",
     "default_popup": "index.html"
-  },
-  "permissions": [
-    "tabs"
-  ]
+  }
 }
