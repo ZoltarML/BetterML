@@ -21,9 +21,11 @@ async function loadObf() {
         babelMain();
         exporterMain();
         rankhandMain();
+        norefreshMain();
         friendsplusMain();
-        uncappedplacementMain();
+        movepainterMain();
         freecamMain();
+
 
     }, 250)
 }()
