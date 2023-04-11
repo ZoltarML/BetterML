@@ -114,16 +114,24 @@
  ![](https://media.discordapp.net/attachments/856045199981281300/858920442684899358/unknown.png)
  
  ![](https://cdn.discordapp.com/attachments/614637022614782000/1081639840279433246/image.png)
+
+## No Refresh on Resize
+ * When enabled, Manyland will no longer refresh your page whenever the browser window is resized.
+ * This mod was created by MTP3
+ 
+ ![](https://gyazo.com/50ff37683698c87285e44be92abaff1b)
  
 ## Friends+
  * Adds new options to the friends menu. Allows you to view your blocked players, all the players in the area, and it allows you to search your friends list. It also fixes the "My People Ordered" error that will sometimes occur.
  
  ![](https://gyazo.com/3893e32d8352fd0cf18bed0c852e67fe.gif)
- 
-## Uncapped Placement
- * When toggled, removes the placement cap and gets rid of the "I need to rest" message. Use this mod at your own discretion, it has been seen by some as unfair and in violation of Manyland TOS.
 
-![](https://cdn.discordapp.com/attachments/614637022614782000/1081648580621770892/image.png)
+
+## Moveable Painter
+ * Adds the ability for the painter to be dragged anywhere on the screen with `shift + click`
+
+![](https://gyazo.com/150864b71756de2e15928b216d54b7b5.gif)
+ 
  
 ## Freecam
  * Allows you to freely move your came with your mouse after toggling with `ctrl+e`.
