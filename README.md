@@ -139,3 +139,11 @@
 
 ![](https://gyazo.com/9fb3d19872681fd2f1bfa8e5d83145bd.gif)
 
+## Image Importer
+ * Adds a new button in the painter that enables you to import images via URLS. 
+ * Ensure that your selected image ends with a `.png, .jpeg, .jpg` for the importer to function properly.
+ * To save the creation you _must_ include the word `"import"` in your creations name, otherwise it will not save.
+ * Many have cited that this modification may be against the Manyland TOS, and while I have tried to place restrictions on how it can be used to better conform to those terms, please still use it with caution and at your own discretion.
+ 
+ ![](https://gyazo.com/c4d1ec006f79276a7d2757196fb4ebdc.gif)
+
