@@ -1,6 +1,10 @@
-async function loadObf() {
-    if (typeof Deobfuscator == 'undefined')
-        await $.getScript("https://cdn.jsdelivr.net/gh/parseml/many-deobf@latest/deobf.js")
+async function loadDependencies() {
+    // Getting deobf
+    if (typeof Deobfuscator == 'undefined') await $.getScript("https://cdn.jsdelivr.net/gh/parseml/many-deobf@latest/deobf.js")
+    // Getting Quantization Algorithm
+    if (typeof MMCQ === 'undefined') $.getScript('https://cdn.jsdelivr.net/gh/ZoltarML/mmcq@1.0/quantize.js')
+    // Getting Jimp
+    if (typeof Jimp == 'undefined') $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.7/jimp.min.js');
 
 }
 
@@ -14,7 +18,7 @@ async function loadObf() {
         else if (typeof Settings !== "function") return
 
         clearInterval(loading);
-        await loadObf();
+        await loadDependencies();
         // Mods go here
         extraSoundsMain();
         performanceMain();
@@ -22,9 +26,11 @@ async function loadObf() {
         exporterMain();
         rankhandMain();
         norefreshMain();
+        loadPixelCopy();
         friendsplusMain();
         movepainterMain();
         freecamMain();
+        importerMain();
 
 
     }, 250)
