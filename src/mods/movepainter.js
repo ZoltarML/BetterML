@@ -142,7 +142,7 @@ async function movepainterMain() {
         if (a == !0 || !ig.game.painter.hasDrawn())
             document.getElementById('importButton') && document.body.removeChild(document.getElementById('importButton'));
 
-        ig.game.painter.isImport = true;
+        ig.game.painter.isImport = false;
     }
 
 
