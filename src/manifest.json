@@ -1,7 +1,7 @@
 {
   "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "BetterML",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "manifest_version": 3,
   "description": "Making Manyland Better.",
   "homepage_url": "https://github.com/ZoltarML/",
@@ -35,7 +35,9 @@
         "mods/friendsplus.js",
         "mods/movepainter.js",
         "mods/freecam.js",
-        "mods/norefresh.js"
+        "mods/norefresh.js",
+        "mods/importer.js",
+        "mods/pixelCopyImage.js"
       ],
       "matches": [
         "http://manyland.com/*",
