@@ -1,5 +1,5 @@
+async function movepainterMain() {
 
-function movepainterMain() {
     // Create a local storage entry
     let movepainterSettings = localStorage.getItem('movepaintersettings');
     movepainterSettings = JSON.parse(movepainterSettings);
@@ -10,14 +10,47 @@ function movepainterMain() {
     ig.game.painter.old_launch = ig.game.painter.launch;
     ig.game.painter.old_close = ig.game.painter.close;
 
-    function dragPainter() {
+    ig.game.painter.isImport = false;
+
+    ig.game.painter.setType = Deobfuscator.function(ig.game.painter, 'c=confirm("Motion', true);
+    ig.game.painter.old_setType = ig.game.painter[ig.game.painter.setType];
+
+
+
+    ig.game.painter.createImportButton = function () {
+        img = document.createElement('img');
+        img.src = 'https://cdn.discordapp.com/attachments/986742746104598548/1095837823950655579/1f15225e0e4e4c9.png'
+        img.style.position = 'absolute';
+        img.style.top = JSON.parse($(".painterInputBox")[0].style.top.split("px")[0]) + (ig.system.scale * 17) - 1 + "px";
+        img.style.left = JSON.parse($(".painterInputBox")[0].style.left.split("px")[0]) + (ig.system.scale * 82) - 2 + "px";
+        img.width = (ig.system.scale * 33.35);
+        img.height = (ig.system.scale * 18) + 2;
+        img.style.cursor = 'pointer';
+        img.id = "importButton";
+
+        img.onclick = function () {
+
+            ig.game.alertDialog.open(`<style> body { margin-top: 25px; } </style> <p class="miftThankYouMessage">Enter Image URL</p> <input type="text" id="urlInput" autocomplete="off" placeholder="https://image.com/thing.png" style="font-size: 10px; font-family: 'Press Start 2P', sans-serif; padding: 5px; width: 300px; "></input>`,
+                true,
+                async () => {
+                    url = document.getElementById("urlInput").value;
+                    pixelCopyImage(url);
+                    ig.game.painter.isImport = true;
+                },
+                "IMPORT", null, null, null, null, null, null, null, true);
+        }
+
+        document.body.appendChild(img);
+    }
+
+    ig.game.painter.dragPainter = function () {
         let pos1 = 0,
             pos2 = 0,
             pos3 = 0,
             pos4 = 0;
 
         let painter = ig.game.painter.canvas;
-        let input = $(".painterInputBox")[0];
+        let input = document.getElementById('nameInput');
 
         painter.onmousedown = dragMouseDown;
 
@@ -48,6 +81,12 @@ function movepainterMain() {
             input.style.top = input.offsetTop - pos2 + "px";
             input.style.left = input.offsetLeft - pos1 + "px";
 
+            if (ig.game.settings.imp && document.getElementById('importButton')) {
+                let importButton = document.getElementById('importButton');
+                importButton.style.top = importButton.offsetTop - pos2 + "px";
+                importButton.style.left = importButton.offsetLeft - pos1 + "px";
+            }
+
         }
 
         function closeDragElement() {
@@ -56,27 +95,103 @@ function movepainterMain() {
         }
     }
 
+    ig.game.painter.hasDrawn = Deobfuscator.function(ig.game.painter, 'a=!1;if(this.data')
+    ig.game.painter.updateTileWidth = Deobfuscator.function(ig.game.painter, 'this.selectedCell;this.');
+
+
+    // Getting Quantization Algorithm
+    if (typeof MMCQ === 'undefined') $.getScript('https://cdn.jsdelivr.net/gh/ZoltarML/mmcq@1.0/quantize.js')
+
+    // Getting Jimp
+    if (typeof Jimp == 'undefined') $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.7/jimp.min.js');
+
+    ig.game.painter.importLaunch = function () {
+        this.old_launch();
+        this.createImportButton();
+    }
+
+    ig.game.painter.moveLaunch = function () {
+        this.old_launch();
+        this.dragPainter();
+    }
+
+    ig.game.painter.importClose = function (a) {
+        this.old_close(a);
+        if (a == !0 || !ig.game.painter.hasDrawn())
+            document.getElementById('importButton') && document.body.removeChild(document.getElementById('importButton'));
+        ig.game.painter.isImport = false;
+
+    }
+
+    ig.game.painter.moveClose = function (a) {
+        this.old_close(a);
+        ig.game.painter.canvas.onmousedown = null;
+    }
+
+    ig.game.painter.doublePainterLaunch = function () {
+        this.old_launch();
+        this.dragPainter();
+        this.createImportButton();
+
+
+    }
+
+    ig.game.painter.doublePainterClose = function (a) {
+        this.old_close(a);
+        ig.game.painter.canvas.onmousedown = null;
+        if (a == !0 || !ig.game.painter.hasDrawn())
+            document.getElementById('importButton') && document.body.removeChild(document.getElementById('importButton'));
+
+        ig.game.painter.isImport = true;
+    }
+
+
+    ig.game.painter.moveSetType = function (a, b) {
+        this.old_setType(a, b);
+        if (typeof ig.game.painter.canvas !== 'undefined')
+            ig.game.painter.canvas.onmousedown = null;
+
+        ig.game.painter.dragPainter();
+
+    }
+
+    ig.game.painter.importSetType = function (a, b) {
+        this.old_setType(a, b);
+        document.getElementById('importButton') && document.body.removeChild(document.getElementById('importButton'));
+        this.createImportButton();
+
+    }
+
+    ig.game.painter.doubleSetType = function (a, b) {
+        this.old_setType(a, b);
+        if (typeof ig.game.painter.canvas !== 'undefined')
+            ig.game.painter.canvas.onmousedown = null;
+
+        document.getElementById('importButton') && document.body.removeChild(document.getElementById('importButton'));
+        this.createImportButton();
+        ig.game.painter.dragPainter();
+    }
+
+
+
     // Create a togglable function
     ig.game.settings.movepainter = function () {
-        if (!this.mpr) {
+        this.mpr = !this.mpr;
+        if (this.mpr) {
 
-            ig.game.painter.launch = function () {
-                this.old_launch();
-                dragPainter();
+            ig.game.painter.launch = ig.game.settings.imp && ig.game.settings.mpr ? ig.game.painter.doublePainterLaunch : ig.game.painter.moveLaunch;
+            ig.game.painter.close = ig.game.settings.imp && ig.game.settings.mpr ? ig.game.painter.doublePainterClose : ig.game.painter.moveClose;
+            ig.game.painter[ig.game.painter.setType] = ig.game.settings.imp && ig.game.settings.mpr ? ig.game.painter.doubleSetType : ig.game.painter.moveSetType;
 
-            }
-
-            ig.game.painter.close = function (a) {
-                ig.game.painter.old_close(a);
-                ig.game.painter.canvas.onmousedown = null;
-            }
 
         } else {
-            ig.game.painter.launch = ig.game.painter.old_launch;
-            ig.game.painter.close = ig.game.painter.old_close;
-            ig.game.painter.canvas.onmousedown = null;
+            ig.game.painter.launch = ig.game.settings.imp ? ig.game.painter.importLaunch : ig.game.painter.old_launch;
+            ig.game.painter.close = ig.game.settings.imp ? ig.game.painter.importClose : ig.game.painter.old_close;
+            ig.game.painter[ig.game.painter.setType] = ig.game.painter.old_setType;
+            if (typeof ig.game.painter.canvas !== 'undefined')
+                ig.game.painter.canvas.onmousedown = null;
         }
-        this.mpr = !this.mpr;
+
         localStorage.setItem('movepaintersettings', this.mpr);
 
     }
