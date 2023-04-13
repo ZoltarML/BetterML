@@ -1,7 +1,7 @@
 {
   "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "BetterML",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "manifest_version": 3,
   "description": "Making Manyland Better.",
   "homepage_url": "https://github.com/ZoltarML/",
