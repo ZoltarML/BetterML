@@ -10,7 +10,7 @@
 
 ## Getting Started
  * To get started using BetterML, open your settings menu and scroll to the very bottom.
- * You should see *three* new categories in your settings menu: Sound Extras, Performance, and BetterML.
+ * You should see *four* new categories in your settings menu: Sound Extras, Performance, Accessibility, and BetterML.
  * To enable a modification simply click its toggle and enjoy!
  
 ![](https://gyazo.com/6dcd6b3d612b150bb8e1caf901ea7461.gif) 
@@ -150,4 +150,24 @@
  Example of "import" not being included in an imported creations name:
  
  ![](https://i.ibb.co/tp52hpk/Screenshot-2023-04-13-at-2-17-48-PM.png)
+ 
+ 
+## High Contrast Mode
+ * Adds an option to enable High Contrast Mode in Manyland for those who struggle with photosensitity or low vision.
+
+ ![](https://gyazo.com/171be8132753fb75a286c2cf3f9163b4.gif)
+  
+## Speech to Text
+ * Allows you to talk instead of type!
+ * Simply ensure that your microphone is plugged in and that Manyland has been granted access to it.
+ * Try speaking clearly and at a slower pace for the absolute best results!
+
+ ![](https://gyazo.com/f3d63f2da1c2bdf5c1173eee5effdf90.gif)
+
+## Debug Mode
+ * Adds the option to enable debug/prototype mode in the settings menu even if below player is below rank 10 *(Sorry Philipp but its useful <3)*
+ 
+ ![](https://gyazo.com/2e13a5001449412bc5fefbf93b4ca7e1.gif)
+  
+
 
