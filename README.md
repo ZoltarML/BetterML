@@ -19,7 +19,9 @@
 * In this section we will go over each mod and describe how to use it.
 
 ## Sound Extras
- * This modification adds a better version of mute, that mutes everything *but* claps, pings, and clicks. It also adds the ability to hear when people are typing within a small range around you as an extra option.
+ * This modification adds a better version of mute, that mutes everything *but* the whitelisted sounds below. It also adds the ability to hear when people are typing within a small range around you as an extra option.
+
+`whiteListedSounds = ["ping", "clap", "click", "whoosh", "softWhoosh", "nocando", "success", "shortWhoosh", "putdown", "pickup", "portallingWhoosh", "jump", "actionSoft", "bin", "collide", "collideSoft"];`
  
  ![](https://media.discordapp.net/attachments/856045199981281300/858919590456197130/unknown.png)
  
