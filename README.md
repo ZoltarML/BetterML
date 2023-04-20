@@ -164,9 +164,7 @@
  ![](https://gyazo.com/f3d63f2da1c2bdf5c1173eee5effdf90.gif)
 
 ## Debug Mode
- * Adds the option to enable debug/prototype mode in the settings menu even if below player is below rank 10 *(Sorry Philipp but its useful <3)*
+ * Adds the option to enable debug/prototype mode in the settings menu.
  
  ![](https://gyazo.com/2e13a5001449412bc5fefbf93b4ca7e1.gif)
-  
-
 
