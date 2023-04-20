@@ -13,7 +13,7 @@
  * You should see *four* new categories in your settings menu: Sound Extras, Performance, Accessibility, and BetterML.
  * To enable a modification simply click its toggle and enjoy!
  
-![](https://gyazo.com/6dcd6b3d612b150bb8e1caf901ea7461.gif) 
+![](https://gyazo.com/44e2e6c9449a4770ed42af6d6a3bf0c8.gif) 
 
 # Mods
 * In this section we will go over each mod and describe how to use it.
