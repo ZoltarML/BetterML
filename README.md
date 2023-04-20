@@ -159,8 +159,7 @@
 ## Speech to Text
  * Allows you to talk instead of type!
  * Simply ensure that your microphone is plugged in and that Manyland has been granted access to it.
- * Try speaking clearly and at a slower pace for the absolute best results!
- * And yes it has a profranity filter, I'd turn it off if I could but apparently its a google api thing ¯\_(ツ)_/¯
+ * Try speaking clearly and at a slower pace for the absolute best results! And yes it has a profranity filter, I'd turn it off if I could but apparently its a google api thing
 
  ![](https://gyazo.com/f3d63f2da1c2bdf5c1173eee5effdf90.gif)
 
