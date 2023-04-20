@@ -151,7 +151,6 @@
  
  ![](https://i.ibb.co/tp52hpk/Screenshot-2023-04-13-at-2-17-48-PM.png)
  
- 
 ## High Contrast Mode
  * Adds an option to enable High Contrast Mode in Manyland for those who struggle with photosensitity or low vision.
 
