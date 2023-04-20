@@ -98,13 +98,6 @@ async function movepainterMain() {
     ig.game.painter.hasDrawn = Deobfuscator.function(ig.game.painter, 'a=!1;if(this.data')
     ig.game.painter.updateTileWidth = Deobfuscator.function(ig.game.painter, 'this.selectedCell;this.');
 
-
-    // Getting Quantization Algorithm
-    if (typeof MMCQ === 'undefined') $.getScript('https://cdn.jsdelivr.net/gh/ZoltarML/mmcq@1.0/quantize.js')
-
-    // Getting Jimp
-    if (typeof Jimp == 'undefined') $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.7/jimp.min.js');
-
     ig.game.painter.importLaunch = function () {
         this.old_launch();
         this.createImportButton();
