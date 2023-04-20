@@ -3,6 +3,8 @@ function extraSoundsMain() {
     ig.game.settings.header = Deobfuscator.function(ig.game.settings, 'text-transform: uppercase;', true);
     const stringMethod = Deobfuscator.function(ig.game.strings, `this.replaceAll(a,"<","&lt;"`, true);
 
+    ig.game.panelSet.musicPlayer.old_addUrl = ig.game.panelSet.musicPlayer.addUrl;
+
     ig.game.settings[ig.game.settings.header] = function (a, b = 'black') {
         return `<div style="margin-top: 30px; margin-bottom: 5px; opacity: .65; color: ${b}; text-transform: uppercase;">` + ig.game.strings[stringMethod](a) + "</div>";
     }
@@ -100,16 +102,16 @@ function extraSoundsMain() {
     ig.game.settings.betterMute = function () {
         if (!this.btm) {
 
-            let whiteListedSounds = ["ping", "clap"];
-            if (ig.game.settings.tps) whiteListedSounds.push("click");
-
+            let whiteListedSounds = ["ping", "clap", "click", "whoosh", "softWhoosh", "nocando", "success", "shortWhoosh", "putdown", "pickup", "portallingWhoosh", "jump", "actionSoft", "bin", "collide", "collideSoft"];
 
             ig.game.player[pasteCheck] = function (a) {
                 if (a === "mutesPastes") return true;
                 var b = this.attachments[ig.game[slotPass].slots.WEARABLE];
 
+
                 return Boolean(b && b.attributes && b.attributes[a])
             }
+            ig.game.panelSet.musicPlayer.addUrl = () => { };
 
             for (let sound of Object.keys(ig.game.sounds)) {
                 if (!whiteListedSounds.includes(sound)) {
@@ -125,6 +127,7 @@ function extraSoundsMain() {
 
         } else {
             ig.game.player[pasteCheck] = storedPasteCheck;
+            ig.game.panelSet.musicPlayer.addUrl = ig.game.panelSet.musicPlayer.old_addUrl;
             for (let sound of Object.keys(ig.game.sounds)) {
                 if (ig.game.sounds[sound].volume == 0) {
                     ig.game.sounds[sound].volume = 1;
@@ -206,8 +209,7 @@ function extraSoundsMain() {
 
 
     ig.game.settings.Create.header("Sound Extras");
-    ig.game.settings.Create.toggle("Better Mute", "btm", "ig.game.settings.betterMute()");
-    ig.game.settings.Create.addendum("(Mutes everything but claps and pings.)")
+    ig.game.settings.Create.toggle("Better Mute", "btm", "ig.game.settings.betterMute()", "Mutes everything but the essentials");
     ig.game.settings.Create.toggle("Type Sound", "tps", "ig.game.settings.typeSound()");
 
 
