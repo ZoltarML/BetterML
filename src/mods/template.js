@@ -17,7 +17,7 @@ function templateMain() {
             ig.game.gravity = 800;
         }
         this.exp = !this.exp;
-        localStorage.setItem('example', this.exp);
+        localStorage.setItem('examplesettings', this.exp);
 
     }
 

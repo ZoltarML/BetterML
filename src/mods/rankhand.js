@@ -112,7 +112,7 @@ function rankhandMain() {
 
                         ig.system.context.drawImage(image2,
                             (this.pos.x * ig.system.scale) + ig.game.playerDialog.clickspotInfoPos.x - initialOffset,
-                            (this.pos.y * ig.system.scale) + ig.game.playerDialog.clickspotInfoPos.y - 10, 50, 50
+                            (this.pos.y * ig.system.scale) + ig.game.playerDialog.clickspotInfoPos.y - 10, (17 * ig.system.scale), (17 * ig.system.scale)
                         );
 
                         ig.system.context.globalAlpha = 1;

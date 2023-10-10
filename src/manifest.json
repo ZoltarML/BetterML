@@ -1,7 +1,7 @@
 {
   "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "BetterML",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "manifest_version": 3,
   "description": "Making Manyland Better.",
   "homepage_url": "https://github.com/ZoltarML/",
@@ -29,7 +29,6 @@
         "mods/loader.js",
         "mods/extrasounds.js",
         "mods/performance.js",
-        "mods/babel.js",
         "mods/exporter.js",
         "mods/rankhand.js",
         "mods/friendsplus.js",
@@ -40,7 +39,13 @@
         "mods/pixelCopyImage.js",
         "mods/speechtotext.js",
         "mods/highcontrast.js",
-        "mods/debugmode.js"
+        "mods/debugmode.js",
+        "mods/buildplus.js",
+        "mods/farbackconverter.js",
+        "dependencies/artyom.window.min.js",
+        "dependencies/deobf.js",
+        "dependencies/jimp.min.js",
+        "dependencies/quantize.js"
       ],
       "matches": [
         "http://manyland.com/*",

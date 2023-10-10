@@ -85,7 +85,7 @@ function exporterMain() {
     }
 
 
-
+    ig.game.settings.Create.header("BetterML", 'green');
     ig.game.settings.Create.toggle("Item Exporter", "exp", "ig.game.settings.exporter()");
 
 

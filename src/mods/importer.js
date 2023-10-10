@@ -60,7 +60,7 @@ function importerMain() {
 
     // Settings menu visuals
     ig.game.settings.Create.toggle("Image Importer", "imp", "ig.game.settings.importer()");
-    ig.game.settings.Create.addendum("Warning: This modification is seen by some as unfair and in violation of Manyland's TOS, use at your own discretion.", 'red');
+    ig.game.settings.Create.addendum("Warning: This modification is seen by some as unfair and in violation of Manylands TOS, use at your own discretion.", 'red');
 
 
 }

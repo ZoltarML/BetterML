@@ -98,6 +98,7 @@ async function movepainterMain() {
     ig.game.painter.hasDrawn = Deobfuscator.function(ig.game.painter, 'a=!1;if(this.data')
     ig.game.painter.updateTileWidth = Deobfuscator.function(ig.game.painter, 'this.selectedCell;this.');
 
+    // erm, sorry
     ig.game.painter.importLaunch = function () {
         this.old_launch();
         this.createImportButton();

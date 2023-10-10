@@ -1,14 +1,4 @@
-async function loadDependencies() {
-    // Getting deobf
-    if (typeof Deobfuscator === 'undefined') await $.getScript("https://cdn.jsdelivr.net/gh/parseml/many-deobf@latest/deobf.js")
-    // Getting Quantization Algorithm
-    if (typeof MMCQ === 'undefined') await $.getScript('https://cdn.jsdelivr.net/gh/ZoltarML/mmcq@1.0/quantize.js')
-    // Getting Jimp
-    if (typeof Jimp === 'undefined') await $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.7/jimp.min.js');
-    // Getting Artyom
-    if (typeof Artyom === 'undefined') await $.getScript('https://cdn.jsdelivr.net/gh/sdkcarlos/artyom.js@latest/build/artyom.window.min.js');
 
-}
 
 // smooth loader from parse
 !async function loader() {
@@ -20,14 +10,13 @@ async function loadDependencies() {
         else if (typeof Settings !== "function") return
 
         clearInterval(loading);
-        await loadDependencies();
+        loadDeobf();
         // Mods go here
         extraSoundsMain();
         performanceMain();
         contrastMain();
         speechtotextMain();
         debugMain();
-        babelMain();
         exporterMain();
         rankhandMain();
         norefreshMain();
@@ -36,6 +25,8 @@ async function loadDependencies() {
         movepainterMain();
         freecamMain();
         importerMain();
+        buildMain();
+        farbackMain();
 
     }, 250)
 }()
